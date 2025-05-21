@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/pages/assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -16,129 +16,168 @@
 
     <!-- Barra de Navegação -->
     <nav>
-        <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#recursos">Recursos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+        <div class="nav-container">
+
+            <div class="logo-container">
+                <img src="/Images/download.png" alt="Logo Safe Alert" class="logo">
+            </div>
+            
+            <ul>
+                <li id="home"><a href="#inicio">Início</a></li>
+                <li id="about"><a href="#sobre">Sobre</a></li>
+                <li id="resource"><a href="#recursos">Recursos</a></li>
+                <li id="contact"><a href="#contato">Contato</a></li>
+            </ul>
+
+            <button id="download-nav-btn" class="download-btn">Download</button>
+
+        </div>
     </nav>
 
-    <!-- Seções do SPA -->
-    <section id="inicio">
-            <h1 class="h1-hero">Safe Alert: Segurança em suas mãos</h1>
-            <p class="p-hero">Proteja-se e ajude seus entes queridos com nosso aplicativo de segurança.</p>
-    </section>
+    <!-- Conteiner para conteúdo dinâmico -->
+    <div class="content-container">
+        <div id="home-view" class="content-view active">
+            <!-- Seções do SPA -->
+            <section id="inicio">
 
-    <section id="sobre">
-        <h2 class="about-title">Sobre o Safe Alert</h2>
-            
-        <div class="about-grid">
-            <!-- Card Missão -->
-            <div class="about-card mission">
-                <h3 class="card-title">MISSÃO</h3>
-                <p class="card-content">
-                    Desenvolver uma solução tecnológica acessível e eficiente que ofereça proteção, autonomia e resposta rápida a pessoas em situação de risco e vulnerabilidade, promovendo segurança e bem-estar por meio do nosso aplicativo.
-                </p>
-            </div>
-            
-            <!-- Card Visão -->
-            <div class="about-card vision">
-                <h3 class="card-title">VISÃO</h3>
-                <p class="card-content">
-                    Ser uma referência nacional em inovação e responsabilidade na área de segurança pessoal, garantindo que todas as pessoas, especialmente as mais vulneráveis, possam viver com mais tranquilidade e dignidade no dia a dia.
-                </p>
-            </div>
-            
-            <!-- Card Valores -->
-            <div class="about-card values">
-                <h3 class="card-title">VALORES</h3>
-                <p class="card-content">
-                    Entender suas necessidades e garantir um serviço acolhedor, usar a tecnologia como ferramenta de proteção à vida e garantir que o app seja intuitivo e inclusivo, com mais privacidade, proteção dos dados e eficácia nas respostas de emergência.
-                </p>
-            </div>
-        </div>
-     </section>
-
-     <section id="recursos">
-            <h1 class="h1">Nossos Recursos</h1>
-            <div class="resources-grid">
-
-                <!-- Card Botão de Emergência -->
-                <div class="resource-card emergency">
-                    <h3 class="resource-title">Botão de Emergência</h3>
-                    <p class="resource-content">
-                        Botão localizado na página inicial do App que, assim que acionado, envia a localização em tempo real para um contato de confiança pré-definido e contata as autoridades locais.
-                    </p>
+                <!-- Coluna de Texto -->
+                <div class="text-hero">
+                    <h1 class="h1-hero">Safe Alert: Segurança em suas mãos</h1>
+                    <p class="p-hero">Proteja-se e ajude seus entes queridos com nosso aplicativo de segurança.</p>
                 </div>
-                
-                <!-- Card Denúncias Anônimas -->
-                <div class="resource-card reports">
-                    <h3 class="resource-title">Denúncias Anônimas</h3>
-                    <p class="resource-content">
-                        Seção de denúncias anônimas que permite o usuário relatar ocorrências recentes de determinada região sem que o mesmo seja exposto.
-                    </p>
-                </div>
-                
-                <!-- Card Alertas Rápidos -->
-                <div class="resource-card alerts">
-                    <h3 class="resource-title">Alertas Rápidos</h3>
-                    <p class="resource-content">
-                        Notificações enviadas no dispositivo do usuário com alertas de notícias sobre determinada região ou informações sobre seu contato de confiança.
-                    </p>
-                </div>
-            </div>
-        </div>
-            
-     </section>
 
-     <footer id="contato">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <h2>Safe Alert</h2>
-                <p>Segurança em suas mãos</p>
-                <p>Proteja-se e ajude seus entes queridos com nosso aplicativo de segurança.</p>
-            </div>
-            
-            <div class="footer-contact">
-                <h3 class="footer-title">Contato</h3>
-                
-                <div class="contact-item">
-                    <span class="contact-icon">📞</span>
-                    <div class="contact-info">
-                        <p>(11) 4002-8922</p>
-                        <p>Atendimento 24h</p>
+                <!-- Mockups -->
+                <div class="mockup-area">
+                    <img src="/Images/iphone.png" class="mockup iphone" alt="Alerta no iPhone">
+                    <img src="/Images/watch.png" class="mockup watch" alt="Alerta no Apple Watch">
+                </div>    
+
+            </section>
+
+            <section id="sobre">
+                <h2 class="about-title">Sobre o Safe Alert</h2>
+
+                <div class="about-grid">
+                    <!-- Card Missão -->
+                    <div class="about-card mission">
+                        <h3 class="card-title">MISSÃO</h3>
+                        <p class="card-content">
+                            Desenvolver uma solução tecnológica acessível e eficiente que ofereça proteção, autonomia e resposta rápida a pessoas em situação de risco e vulnerabilidade, promovendo segurança e bem-estar por meio do nosso aplicativo.
+                        </p>
+                    </div>
+
+                    <!-- Card Visão -->
+                    <div class="about-card vision">
+                        <h3 class="card-title">VISÃO</h3>
+                        <p class="card-content">
+                            Ser uma referência nacional em inovação e responsabilidade na área de segurança pessoal, garantindo que todas as pessoas, especialmente as mais vulneráveis, possam viver com mais tranquilidade e dignidade no dia a dia.
+                        </p>
+                    </div>
+
+                    <!-- Card Valores -->
+                    <div class="about-card values">
+                        <h3 class="card-title">VALORES</h3>
+                        <p class="card-content">
+                            Entender suas necessidades e garantir um serviço acolhedor, usar a tecnologia como ferramenta de proteção à vida e garantir que o app seja intuitivo e inclusivo, com mais privacidade, proteção dos dados e eficácia nas respostas de emergência.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="contact-item">
-                    <span class="contact-icon">✉️</span>
-                    <div class="contact-info">
-                        <p><a href="mailto:contato@safealert.com">contato@safealert.com</a></p>
-                        <p><a href="mailto:suporte@safealert.com">suporte@safealert.com</a></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-contact">
-                <h3 class="footer-title">Endereço</h3>
-                
-                <div class="contact-item">
-                    <span class="contact-icon">🏢</span>
-                    <div class="contact-info">
-                        <p>Av. Paulista, 1000 - 10º andar</p>
-                        <p>Bela Vista, São Paulo - SP</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 Safe Alert. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-    
+            </section>
 
-    <script src="script.js" type="module"></script>
+            <section id="recursos">
+                    <h1 class="h1">Nossos Recursos</h1>
+                    <div class="resources-grid">
+
+                        <!-- Card Botão de Emergência -->
+                        <div class="resource-card emergency">
+                            <h3 class="resource-title">Botão de Emergência</h3>
+                            <p class="resource-content">
+                                Botão localizado na página inicial do App que, assim que acionado, envia a localização em tempo real para um contato de confiança pré-definido e contata as autoridades locais.
+                            </p>
+                        </div>
+                    
+                        <!-- Card Denúncias Anônimas -->
+                        <div class="resource-card reports">
+                            <h3 class="resource-title">Denúncias Anônimas</h3>
+                            <p class="resource-content">
+                                Seção de denúncias anônimas que permite o usuário relatar ocorrências recentes de determinada região sem que o mesmo seja exposto.
+                            </p>
+                        </div>
+                    
+                        <!-- Card Alertas Rápidos -->
+                        <div class="resource-card alerts">
+                            <h3 class="resource-title">Alertas Rápidos</h3>
+                            <p class="resource-content">
+                                Notificações enviadas no dispositivo do usuário com alertas de notícias sobre determinada região ou informações sobre seu contato de confiança.
+                            </p>
+                        </div>
+                    </div>
+            </section>
+
+            <footer id="contato">
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <h2>Safe Alert</h2>
+                        <p>Segurança em suas mãos</p>
+                        <p>Proteja-se e ajude seus entes queridos com nosso aplicativo de segurança.</p>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h3 class="footer-title">Contato</h3>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div class="contact-info">
+                                <p>(11) 4002-8922</p>
+                                <p>Atendimento 24h</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div class="contact-info">
+                                <p><a href="mailto:contato@safealert.com">contato@safealert.com</a></p>
+                                <p><a href="mailto:suporte@safealert.com">suporte@safealert.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h3 class="footer-title">Endereço</h3>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">🏢</span>
+                            <div class="contact-info">
+                                <p>Av. Paulista, 1000 - 10º andar</p>
+                                <p>Bela Vista, São Paulo - SP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Safe Alert. Todos os direitos reservados.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Página de download -->
+        <div id="download-view" class="content-view">
+
+
+            <h1 class="h1-dl">Baixe o Safe Alert e tenha mais segurança na palma da sua mão</h1>
+            <p class="p-dl">Com agilidade e proteção em um só lugar.</p>
+
+            <div class="mokup-area">
+                    <img src="/Images/Login.png" class="mockup-login" alt="Login no iphone">
+                </div>   
+            
+            <p>Baixe nosso app em seu dispositivo <strong>mobile</strong> escaneando o código <strong>QR</strong>.</p>
+            
+        </div>
+
+
+    <script src="/pages/assets/script.js" type="module"></script>
 </body>
 </html>
